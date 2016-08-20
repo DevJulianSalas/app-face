@@ -9,6 +9,7 @@ import os
 
 #Variables de configuracion
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+print(BASE_DIR)
 
 class Config(object):
     """Configuracion general."""
