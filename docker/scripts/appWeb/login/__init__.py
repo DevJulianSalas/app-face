@@ -5,9 +5,9 @@
 from flask import Blueprint
 
 main = Blueprint("login",  __name__,
-                  template_folder="templates",
-                  )
-
+                 template_folder="templates",
+                 static_folder="static",
+)
 
 # # Llamamos a todos sus modulos del paquete
 from . import controllers, models

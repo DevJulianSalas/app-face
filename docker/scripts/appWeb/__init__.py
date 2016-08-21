@@ -14,7 +14,7 @@ from config import config
 
 def create_app(config_name):
     """Crea la app flask de acuerdo al contexto."""
-    app  = Flask(__name__)
+    app  = Flask(__name__, static_folder=None)
     app.config.from_object(config[config_name])
     # bootstrap = Bootstrap(app)
     # print bootstrap
