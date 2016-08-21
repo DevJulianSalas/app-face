@@ -2,10 +2,10 @@
 
 # -- Packages Build-in --
 # -- Packages Installed --
-from flask import Flask
+from flask import render_template
 # -- Own Packages --
 from . import main
 
 @main.route("/index")
 def index():
-    return "index"
+    return render_template()

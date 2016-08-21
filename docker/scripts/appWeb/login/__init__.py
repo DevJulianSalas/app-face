@@ -4,7 +4,9 @@
 #---- build-in Packages----#
 from flask import Blueprint
 
-main = Blueprint("appWeb.auth2.0", __name__)
+main = Blueprint("appWeb.auth2.0", __name__,
+                 template_folder="templates",
+                 static_folder="static")
 
 # # Llamamos a todos sus modulos del paquete
 from . import controllers, models
