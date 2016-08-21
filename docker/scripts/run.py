@@ -2,6 +2,8 @@
 
 # --- build-in Packages ---
 import os
+# -- Installed Packages --
+from flask.ext.bootstrap import Bootstrap
 
 # --- Own Packages ---
 from appWeb import create_app
@@ -11,7 +13,11 @@ from appWeb import create_app
 
 # Creamos la app para correrla
 app = create_app(os.getenv("FLASK_CONFIG") or "default")
+bootstrap = Bootstrap(app)
+dir(app)
+dir(bootstrap)
 # celery = cf.make_celery(app)
+
 
 
 if __name__ == '__main__':

@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang=es>
   <head>
     <meta charset="utf-8">
     <title>Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--scripts for that bootstrap work fine-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <!--scripts for that bootstrap work fine-->
+    <link rel="stylesheet" href="{{ url_for("static", filename= "login.css")}}">
   </head>
   <body>
+  <section class="container" id="frame_form">
+    <h1>image for form</h1>
+    <form action="index.html" method="post">
+      <div class="form-group row">
+        <label for="input_text" class="col-xs-4 col-sm-4 col-lg-2 col-form-label">User</label>
+        <div class="col-xs-8 col-sm-8 col-lg-6">
+          <input class="form-control" type="text" value="Artisanal kale" id="input_text">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-text-input" class="col-xs-4 col-sm-4 col-lg-2 col-form-label">Password</label>
+        <div class="col-xs-8 col-sm-8 col-lg-6">
+          <input class="form-control" type="password" id="example-text-input">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-sm-8 col-lg-6">
+          <button type="submit" class="btn btn-primary btnpull-left" >Submit</button>
+        </div>
+      </div>
+    </form>
+  </section>
 
+
+
+  <!--scripts for that bootstrap work fine-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+  <!--scripts for that bootstrap work fine-->
   </body>
 </html>
