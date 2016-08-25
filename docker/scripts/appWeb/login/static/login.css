@@ -1,8 +1,25 @@
-@CHARSET "UTF-8";
+@charset "charset-name";
 
 /* body configuration*/
 
 body{
   margin:0 auto;
-  background: #303138;
+  padding: 0;
+}
+
+/*Cuadro de formulario*/
+
+.container_pattern{
+  width: 100%;
+  /*position: relative;*/
+}
+
+#form{
+  background: yellow;
+  position: absolute;
+  height: 250px;
+  width: 400px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%); /*Averiguar esto*/
 }
