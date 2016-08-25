@@ -2,6 +2,13 @@
 
 /* body configuration*/
 
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;  /* linea que se dibuja en los*/
+}
+
 body{
   margin:0 auto;
   padding: 0;
@@ -9,17 +16,30 @@ body{
 
 /*Cuadro de formulario*/
 
-.container_pattern{
-  width: 100%;
-  /*position: relative;*/
+form[role=login]{
+  margin: 0 auto;
+  margin-top: 180px;
+  border-style:groove;
+  max-width: 400px;
+
+  /*width:400px;
+  height: 300px;*/
 }
 
-#form{
-  background: yellow;
-  position: absolute;
-  height: 250px;
-  width: 400px;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, -50%); /*Averiguar esto*/
+/*Se configura los elementos relativos dentro del formulario*/
+
+form[role=loging] div {
+  position: relative;
+
+
+}
+
+form[role=login] input,
+form[role=login] button {
+  font-size:16px;
+}
+
+form[role=login] h1
+{
+  
 }
