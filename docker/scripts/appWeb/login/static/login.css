@@ -13,8 +13,11 @@ body{
   margin:0 auto;
   padding: 0;
 	background-color: #ECF0F1;
+	font-family: 'Baloo Chettan', cursive;
+
 }
 
+/******************************Formulario*******************************************/
 /*Cuadro de formulario*/
 
 form[role=login]{
@@ -22,8 +25,10 @@ form[role=login]{
 	height: 300px;
   margin-top: 180px;
   max-width: 400px;
-	background-color: white;
+	background-color:white;
+
 }
+
 
 /*Se configura los elementos relativos dentro del formulario*/
 
@@ -31,18 +36,77 @@ form[role=loging] div {
   position: relative;
 }
 
+/*Top of form with login*/
+#FormTop
+{
+	background: #3498DB;
+	text-align:center;
+	height: 60px;
+	font-size: 35px;
+	color: white;
+	border-color: black;
+	border-style: solid;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width:thin;
+	border-collapse: none;
+  margin:0;
+}
+
+
+form[role=login]{
+	border-collapse: none;
+	border-color: black;
+	border-style: solid;
+	border-width:1px;
+
+}
 /*Se da tamao a los input y button y otras config*/
 form[role=login] input,
 form[role=login] button {
-  font-size:16px;
-	
+  font-size:14px;
+
+}
+
+/* se configura el color del icono a lado del input*/
+form[role=login] .input-group-addon {
+		background: #3498DB;
+		font-size: 20px;
+		color: white;
+}
+
+
+/*se configura el button */
+
+
+form[role=login] button {
+		background: #3498DB;
+		border: none;
+		font-size: 20px;
+		margin-top: 25px;
+		border-radius: 2px;
 
 }
 
 
 
-#imageCenter
-{
-	background: black;
-	text-align:center;
+/**************************************************************************/
+
+/*hack to generate minus space*/
+.form-group {
+	margin: 10px 0;
 }
+	.form-group input,
+	.form-group .input-group-addon {
+		border-radius: 2px;
+}
+
+form[role=login] > section {
+		text-align: center;
+		margin: 15px 0;
+	}
+		form[role=login] > section span {
+			color: #767a7f;
+
+		}

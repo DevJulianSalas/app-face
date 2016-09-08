@@ -6,47 +6,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!--scripts for that bootstrap work fine-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-    <!--scripts for that bootstrap work fine-->
-    <link rel="stylesheet" href="{{url_for("login.static", filename= "login.css")}}">
+    <!--Font to google -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <!--Link para acceder a bootstrap-->
+    <link rel="stylesheet" href="{{url_for("login.static", filename="bootstrap/css/bootstrap.min.css")}}">
+    <!--Link para acceder a bootstrap-->
+    <!--Accede a los estilos css-->
+    <link rel="stylesheet" href="{{url_for("login.static", filename = "login.css")}}">
+    <!--Accede a los estilos css-->
   </head>
   <body>
   <section class="container login-form">
     <form action="index.html" method="post" id="test" role=login>
-      <div id="" class="form-group">
-          <img id="imageCenter" src="{{ url_for("login.static", filename = "images/login.png") }}" class="img-circle" width="60" height="60">
-        <div class="input-group">
-          <div class="col-xs-4 col-sm-4 col-lg-2">
-            <label for="input_text">User</label>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <input class="form-control" type="text" value="Artisanal kale" id="input_text">
+      <div id="FormTop" class="form-group">
+        <p>Login</p>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+            <input type="text" name="user" placeholder="Username" required class="form-control input-lg" />
           </div>
         </div>
       </div>
       <div class="form-group">
-        <div class="input-group">
-          <div class="col-xs-4 col-sm-4 col-lg-2">
-            <label for="input_text">User</label>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <input class="form-control" type="password" id="input_text">
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-					<button type="submit" name="go" class="btn btn-lg btn-block btn-success">SIGN IN</button>
+   				<div class="input-group">
+      				<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+					<input type="password" name="password" placeholder="Password" required class="form-control input-lg" />
+				</div>
 			</div>
+      <div class="form-group">
+        <button type="submit" name="go" class="btn btn-lg btn-block btn-success">SIGN IN</button>
+      </div>
+      <section>
+        Not a member? <a href="#">Sign up now <span>&rarr;</span></a>
+      </section>
     </form>
   </section>
 
 
 
   <!--scripts for that bootstrap work fine-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="{{url_for("login.static", filename="bootstrap/js/bootstrap.min.js")}}">
+
+  </script>
   <!--scripts for that bootstrap work fine-->
   </body>
 </html>
