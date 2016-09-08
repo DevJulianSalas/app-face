@@ -2,12 +2,14 @@
 flask:
     build: .
     hostname: app-face
+    ports:
         - "8000:8000"
         - "8001:8001"
     environment:
       - ENV:DEV
     expose:
       - "8000"
+      - "8001"
     volumes:
       - /home/kalismash/Docker/app_proyecto/app-face/docker/scripts/:/opt/appWeb
     labels:
