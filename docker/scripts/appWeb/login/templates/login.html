@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=es>
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--Font to google -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <!--Link para acceder a bootstrap-->
+    <link rel="stylesheet" href="{{url_for("login.static", filename="bootstrap/css/bootstrap.min.css")}}">
+    <!--Link para acceder a bootstrap-->
+    <!--Accede a los estilos css-->
+    <link rel="stylesheet" href="{{url_for("login.static", filename = "login.css")}}">
+    <!--Accede a los estilos css-->
+  </head>
+  <body>
+  <section class="container login-form">
+    <form action="index.html" method="post" id="test" role=login>
+      <div id="FormTop" class="form-group">
+        <p>Login</p>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+            <input type="text" name="user" placeholder="Username" required class="form-control input-lg" />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+   				<div class="input-group">
+      				<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+					<input type="password" name="password" placeholder="Password" required class="form-control input-lg" />
+				</div>
+			</div>
+      <div class="form-group">
+        <button type="submit" name="go" class="btn btn-lg btn-block btn-success">SIGN IN</button>
+      </div>
+      <section>
+        Not a member? <a href="#">Sign up now <span>&rarr;</span></a>
+      </section>
+    </form>
+  </section>
+
+
+
+  <!--scripts for that bootstrap work fine-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="{{url_for("login.static", filename="bootstrap/js/bootstrap.min.js")}}">
+
+  </script>
+  <!--scripts for that bootstrap work fine-->
+  </body>
+</html>
