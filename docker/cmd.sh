@@ -6,6 +6,7 @@
 # exec all to app
 
 set -e  # configura como parametro -e en docker es -environment
+
 if [ "$ENV"= 'DEV' ]; then
   echo $ENV
   echo "Running Development Server"

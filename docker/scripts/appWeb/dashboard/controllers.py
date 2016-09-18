@@ -4,8 +4,9 @@
 # -- Packages Installed --
 from flask import render_template, url_for
 # -- Own Packages --
-from . import login
+from . import dashboard
 
-@login.route("/index")
+
+@dashboard.route("/dashboard")
 def index():
-    return render_template("login.html")
+    return render_template("dashboard.html")
